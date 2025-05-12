@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Career Guide Portal</title>
+    <title>CareerQuest</title>
 </head>
 <body>
-    <header>
+   <div>
         <table width="100%">
             <tr>
                 <td><img src="./images/main-icon.jpg" alt="Logo" height="50"></td>
@@ -16,22 +16,19 @@
                 </td>
             </tr>
         </table>
-    </header>
+    </div>
 <hr>
- <div>
-        <h3>Want to become a</h3>
-        <input list="job-profiles" placeholder="Select Job Profile">
-        <datalist id="job-profiles">
-            <option value="Python Developer">
-            <option value="Java Developer">
-            <option value="Web Developer">
-            <option value="Data Scientist">
-            <option value="DevOps Engineer">
-            <option value="Android Developer">
-            <option value="C++ Developer">
-        </datalist>
-        <button>🔍</button>
-   </div>
+<form action="" method="get" onsubmit="return false;">
+    <h3>Want to become a</h3>
+    <select onchange="location = this.value;">
+        <option value="">Select Job Profile</option>
+        <option value="./profiles/python.html">Python Developer</option>
+        <option value="./profiles/java.html">Java Developer</option>
+        <option value="./profiles/web.html">Web Developer</option>
+      <option value="./profiles/flutter.html">Flutter Developer</option>
+        <option value="./profiles/cpp.html">C++ Developer</option>
+    </select>
+</form>
 <hr>
 &nbsp;&nbsp;
 <div>
@@ -41,6 +38,8 @@
   <a href="./pages/soft-skills.html" target="_blank">Soft Skill</a>&nbsp;&nbsp;&nbsp;
   
   <a href="./pages/process-hiring.html" target="_blank">Process & Hiring</a>&nbsp;&nbsp;&nbsp;
+  <a href="./pages/register.html" target="_blank">Register</a>&nbsp;&nbsp;&nbsp;
+
     </div>
     <hr>&nbsp;&nbsp;
     <div>
@@ -49,11 +48,10 @@
         <button>Share your Experience</button>
     </div>
     <hr>&nbsp;&nbsp;
+     <div>
+        <h4>Here we can add something</h4>
+        <p>Extra content or announcements can go here.</p>
+     </div>
     
-    
-  
-
-    
-
-</body>
+  </body>
 </html>
